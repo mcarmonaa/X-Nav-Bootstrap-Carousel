@@ -7,24 +7,114 @@
     <title>Rediseño de la web de la ETSIT con Bootstrap</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Carousel extra styles -->
     <link rel="stylesheet" href="css/carousel.css">
   </head>
   <body>
-    <h1>Esto es un ejercicio para hacer una página para la ETSIT URJC con componentes de Boostrap.</h1>
 
-    <p>La página web ha de usar al menos:</p>
-    <ul>
-      <li>Un <i>carousel</i> (con su barra de navegación)</li>
-      <li>Al menos dos componentes más de Boostrap (a elección del alumno)</<li>
-      <li>Al menos un componente de <a href="http://www.bootsnipp.com">Bootsnipp</a></li>
-    </ul>
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#">Universidad Rey Juan Carlos</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">Home</a></li>
+                      <li class="active"><a href="http://www.urjc.es/universidad/presentacion">About URJC</a></a></li>
+                      <li class="active"><a href="http://www.urjc.es/estudios/grado">Academics</a></li>
+                      <li class="active"><a href="http://www.urjc.es/estudiar-en-la-urjc/admision">Studing at URJC</a></li>
+                      <li class="active"><a href="http://www.urjc.es/investigacion">Research</a></li>
+                      <li class="active"><a href="http://www.urjc.es/internacional/inicio">International</a></li>
+                      <li class="active"><a href="http://www.urjc.es/actualidad/noticias">News</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+      <div class="jumbotron">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                      <img src="images/logo_URJC.svg.png" class="img-responsive" alt="Universidad Rey Juan Carlos" />
+                  </div>
+                  <div class="col-md-8">
+                      <h1>Esto es un ejercicio para hacer una página para la ETSIT URJC con componentes de Boostrap.</h1>
+                      <p>La página web ha de usar al menos:</p>
+                      <ul>
+                        <li>Un <i>carousel</i> (con su barra de navegación)</li>
+                        <li>Al menos dos componentes más de Boostrap (a elección del alumno)</<li>
+                        <li>Al menos un componente de <a href="http://www.bootsnipp.com">Bootsnipp</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                  <img src="images/aularioII-edificio.JPG" alt="Aulario II">
+                  <div class="carousel-caption">
+                      <h1>Aulario II</h1>
+                      <p> ┻━┻︵ \(°□°)/ ︵ ┻━┻ </p>
+                  </div>
+              </div>
+
+              <div class="item">
+                  <img src="images/deparIII-edificio3.JPG" alt="Departamental III">
+                  <div class="carousel-caption">
+                      <h1>Departamental III</h1>
+                      <p>  ̿’ ̿’\̵͇̿̿\з=(◕_◕)=ε/̵͇̿̿/’̿’̿ ̿ </p>
+                  </div>
+              </div>
+
+              <div class="item">
+                  <img src="images/deporte-estadio.JPG" alt="Stadium">
+                  <div class="carousel-caption">
+                      <h1>Stadium</h1>
+                      <p> 웃웃웃vs웃웃웃 </p>
+                  </div>
+              </div>
+
+              <div class="item">
+                  <img src="images/labosII-edificio.JPG" alt="Labs II">
+                  <div class="carousel-caption">
+                      <h1>Labs II</h1>
+                      <p> (づ｡◕‿‿◕｡)づ </p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+          </a>
+      </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>
   </body>
 </html>
